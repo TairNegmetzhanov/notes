@@ -1,0 +1,12 @@
+command for reference:
+
+>> ifconfig
+
+and you'll see: 
+
+enp0s3: ... some info.
+    inet: *.*.*.* for putty
+    
+==============================
+
+
