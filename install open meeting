@@ -1,0 +1,49 @@
+Starting...
+
+1) First, we update and upgrade the OS:
+
+>> sudo apt update
+>> sudo apt upgrade
+
+2) Installation of OpenJava 1.8 
+
+OpenMeetings 4.0.6 need Java 1.8 to work. So, we install OpenJava 1.8:
+
+>> sudo apt install openjdk-8-jdk openjdk-8-jdk-headless
+
+...and his plugin for web:
+
+>> sudo apt install icedtea-8-plugin
+
+-----------------------------------------------------------------------------------------------
+Don't work for VM Ubuntu 18.04 server.
+
+I use (https://stackoverflow.com/questions/32942023/ubuntu-openjdk-8-unable-to-locate-package):
+
+Add the webupd8 repo to your system:
+
+>> sudo add-apt-repository ppa:webupd8team/java
+>> sudo apt-get update
+
+Install your preferred version of jdk (versions from java-6 to java-9 available):
+
+>> sudo apt-get install oracle-java8-installer
+------------------------------------------------------------------------------------------------
+
+Now, please, select OpenJava 1.8, if you have more than one java versions installed:
+
+>> sudo update-alternatives --config java
+
+To see the active java version:
+
+>> java -version
+
+LibreOffice is need it to convert to pdf the uploaded office files.
+The ubuntu desktop iso have already LibreOffice installed.
+But we install it specially for server iso:
+
+>> sudo add-apt-repository ppa:libreoffice/ppa
+>> sudo apt update
+>> sudo apt install libreoffice
+
+
