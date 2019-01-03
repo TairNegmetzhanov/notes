@@ -38,6 +38,8 @@ To see the active java version:
 
 >> java -version
 
+3) Installation of LibreOffice
+
 LibreOffice is need it to convert to pdf the uploaded office files.
 The ubuntu desktop iso have already LibreOffice installed.
 But we install it specially for server iso:
@@ -46,4 +48,24 @@ But we install it specially for server iso:
 >> sudo apt update
 >> sudo apt install libreoffice
 
+4) Installation ImageMagick and Sox
 
+ImageMagick, will work the image files, png, jpg, gif, etc. Will install it and some more libraries
+and paquets:
+
+>> sudo apt install -y imagemagick libjpeg62 zlib1g-dev
+
+--------------------------------------------------------------------
+I trying install
+
+>> sudo apt-get install libjpeg-dev
+
+instead of
+
+>> sudo apt install -y libjpeg62
+
+--------------------------------------------------------------------
+
+Sox, work the sound. We install it:
+
+>> sudo apt install sox
