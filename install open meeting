@@ -69,3 +69,41 @@ instead of
 Sox, work the sound. We install it:
 
 >> sudo apt install sox
+
+5) ------ Installation of Adobe Flash Player ------
+
+OpenMeetings even need Adobe Flash Player for cam and audio. We install it
+
+>> sudo apt install flashplugin-installer
+
+6) Compilation of FFmpeg
+
+
+FFmpeg will work the video. This compilation is based on:
+
+>> sudo apt -y --force-yes install autoconf automake build-essential libass-dev libfreetype6-dev libgpac-dev libsdl1.2-dev libtheora-dev libtool libva-dev libvdpau-dev libvorbis-dev libxcb1-dev libxcb-shm0-dev libxcb-xfixes0-dev pkg-config texi2html zlib1g-dev nasm libx264-dev cmake mercurial libopus-dev curl git vlc unzip make build-essential wget nmap
+
+I made a script that will download, compile and install ffmpeg.
+The result of any recording we do in OpenMeetings will be in mp4 format.
+Please, download the script:
+
+>> cd /opt
+
+>> sudo wget https://cwiki.apache.org/confluence/download/attachments/27838216/ffmpeg_UbunDebi.sh
+
+...concede permission of execution:
+
+>> sudo chmod +x ffmpeg_UbunDebi.sh
+
+...and run it (be connected to Internet). The compilation will spend about 20-30 minutes:
+
+>> sudo ./ffmpeg_UbunDebi.sh
+
+When finish the compilation, a text will announce it:
+>> FFmpeg Compilation is Finished!
+...then, please, go to step 7). 
+
+7) Installation and configuration of MariaDB data server
+
+
+
